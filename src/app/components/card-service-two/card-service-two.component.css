@@ -1,0 +1,75 @@
+.containerGeneral {
+  background: rgba(19, 38, 92, 0.5);
+  color: white;
+}
+.containerCard {
+  max-width: 1240px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  /* height: 600px; */
+}
+.containerGrid {
+  height: 200px;
+}
+.one {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.two {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.three {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+P {
+  font-size: 14px;
+}
+.title {
+  font-size: 28px;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 800;
+}
+.titlePrimary {
+  font-size: 40px;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 800;
+}
+.line {
+  width: 150px;
+  height: 4px;
+  background: white;
+  margin: 15px 0px;
+}
+
+@media (max-width: 500px) {
+  .one {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .two {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .three {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

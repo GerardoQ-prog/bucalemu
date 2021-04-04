@@ -1,0 +1,90 @@
+.contentBanner {
+  position: relative;
+}
+.containerRow {
+  max-width: 1240px;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 210px;
+  padding: 40px 10px;
+
+  /* margin-top: -100px; */
+}
+.line {
+  width: 190px;
+  height: 3px;
+  background: #6f8ee7;
+  margin-bottom: 15px;
+}
+
+.textTitle {
+  color: white;
+  font-weight: 900;
+  font-size: 36px;
+}
+.textContent {
+  color: white;
+  font-size: 14px;
+}
+.btnIngreso {
+  color: white;
+  font-weight: 800;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background: #6f8ee7;
+  width: 214px;
+  height: 48px;
+  transition: all 500ms ease;
+}
+
+.btnIngreso:hover {
+  background: white;
+  color: #12275f;
+  border: 1px solid #6f8ee7;
+}
+
+.btnIngreso:active {
+  background: #617dcb;
+  color: white;
+  border: none;
+}
+
+.containerButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.image {
+  width: 100%;
+}
+@media (max-width: 1080px) {
+  .containerRow {
+    height: 300px;
+  }
+  .image {
+    height: 300px;
+  }
+}
+@media (max-width: 578px) {
+  .textTitle {
+    font-size: 24px;
+  }
+  .containerRow {
+    height: 400px;
+  }
+  .image {
+    height: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .textTitle {
+    font-size: 24px;
+  }
+}

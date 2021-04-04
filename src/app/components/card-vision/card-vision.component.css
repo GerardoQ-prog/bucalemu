@@ -1,0 +1,60 @@
+.containerGrid {
+  max-width: 1240px;
+  margin: auto;
+  position: relative;
+  padding: 0px 20px;
+}
+.containerImage {
+  margin: 40px 0px;
+  z-index: 9;
+  margin-left: -60px;
+  display: flex;
+  justify-content: center;
+}
+.containerText {
+  background: white;
+  padding: 50px 20px 20px 60px;
+  padding-right: 120px;
+}
+.textTitle {
+  font-size: 36px;
+  font-weight: 700;
+  color: #54595f;
+  margin-bottom: -15px;
+}
+.subLine {
+  border-bottom: 2px solid #6f8ee7;
+  /* margin-top: -125px; */
+}
+.subText {
+  margin: 40px 0px;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .textTitle {
+    font-size: 28px;
+    /* margin-right: 5px; */
+  }
+  .subText {
+    font-size: 12px;
+  }
+  .containerImage {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .containerText {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .textTitle {
+    font-size: 24px;
+    /* margin-right: 5px; */
+  }
+  .subText {
+    font-size: 11px;
+  }
+}

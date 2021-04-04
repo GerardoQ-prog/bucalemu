@@ -1,0 +1,74 @@
+.cardOperation {
+  width: 450px;
+  padding: 30px;
+}
+.cardOperation_card {
+  background: rgba(18, 39, 95, 0.5);
+  text-align: center;
+  padding: 25px 60px;
+  color: white;
+  opacity: 0.9;
+  width: 398px;
+  height: 280px;
+}
+.container_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 5px; */
+}
+h1,
+h4 {
+  font-weight: 400;
+}
+h1 {
+  font-size: 36px;
+  margin: 15px 0px;
+  opacity: 1;
+}
+h4 {
+  font-size: 16px;
+  margin: 15px 0px;
+  opacity: 1;
+}
+
+@media (max-width: 500px) {
+  .cardOperation_card {
+    width: 350px;
+    margin-left: -3px;
+  }
+
+  .cardOperation {
+    width: 400px;
+    padding: 30px;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 15px 0px;
+    opacity: 1;
+  }
+  h4 {
+    font-size: 14px;
+    margin: 15px 0px;
+    opacity: 1;
+  }
+}
+@media (max-width: 400px) {
+  .cardOperation {
+    width: 350px;
+    padding: 30px;
+  }
+  .cardOperation_card {
+    width: 300px;
+  }
+}
+
+@media (max-width: 359px) {
+  .cardOperation {
+    width: 320px;
+    padding: 30px;
+  }
+  .cardOperation_card {
+    width: 300px;
+  }
+}

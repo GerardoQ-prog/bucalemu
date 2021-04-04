@@ -1,0 +1,14 @@
+.containerSustainability {
+  /* max-width: 1840px;
+  margin: auto;
+  padding: 40px; */
+  margin: 20px 0px;
+  padding: 60px 0px;
+}
+.containerSustainability_cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  /* border: 1px solid blue; */
+  justify-content: center;
+}

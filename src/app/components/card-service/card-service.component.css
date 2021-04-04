@@ -1,0 +1,174 @@
+.cardService {
+  width: 666px;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.cardService_image {
+  /* background: gray; */
+  margin-left: -230px;
+  width: 402px;
+  height: 310px;
+}
+.cardService_card {
+  position: absolute;
+  top: 38px;
+  right: 20px;
+  background: white;
+  width: 352px;
+  height: 255px;
+  padding: 40px;
+  color: #585962;
+}
+.card_container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container_button {
+  background: rgba(80, 100, 170, 0.5);
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px;
+  height: 42px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  width: 133px;
+  opacity: 0.8;
+  margin-right: -38px;
+  margin-bottom: -10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.container_button:hover {
+  background: rgba(111, 142, 231, 0.75);
+}
+
+.container_button:active {
+  background: rgba(80, 100, 170, 0.75);
+}
+
+h3,
+h2 {
+  font-weight: 700;
+}
+h3 {
+  font-size: 20px;
+}
+h2 {
+  font-size: 28px;
+}
+p {
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .cardService {
+    width: 550px;
+    height: 560px;
+    padding: 10px;
+    position: relative;
+  }
+  .cardService_image {
+    /* background: gray; */
+    margin-left: 0px;
+    width: 402px;
+    height: 310px;
+  }
+  .cardService_card {
+    position: absolute;
+    top: 250px;
+    left: 25%;
+    background: white;
+    width: 300px;
+    height: 245px;
+    padding: 30px;
+
+    /* padding: 20px; */
+  }
+  .card_container {
+    margin-right: 10px;
+    margin-bottom: -10px;
+  }
+}
+
+@media (max-width: 560px) {
+  .cardService {
+    width: 430px;
+    height: 500px;
+    padding: 10px;
+    position: relative;
+  }
+  .cardService_image {
+    /* background: gray; */
+    width: 350px;
+    height: 200px;
+  }
+  .cardService_card {
+    position: absolute;
+    top: 200px;
+    left: 70px;
+    background: white;
+    width: 300px;
+    height: 245px;
+    /* padding: 20px; */
+  }
+}
+
+@media (max-width: 500px) {
+  .cardService {
+    width: 400px;
+    height: 500px;
+    padding: 10px;
+    position: relative;
+  }
+  .cardService_image {
+    /* background: gray; */
+    width: 320px;
+    height: 200px;
+  }
+  .cardService_card {
+    position: absolute;
+    top: 200px;
+    left: 60px;
+    background: white;
+    width: 280px;
+    height: 225px;
+    /* padding: 20px; */
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 400px) {
+  .cardService {
+    width: 320px;
+    height: 500px;
+    padding: 10px;
+    position: relative;
+  }
+  .cardService_image {
+    /* background: gray; */
+    width: 300px;
+    height: 200px;
+  }
+  .cardService_card {
+    position: absolute;
+    top: 200px;
+    left: 15px;
+    background: white;
+    width: 280px;
+    height: 225px;
+    /* padding: 20px; */
+  }
+}

@@ -1,0 +1,77 @@
+.containerGeneral {
+  background: rgba(18, 39, 95, 0.5);
+}
+.containerMap {
+  max-width: 1240px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+.textTitle {
+  font-size: 36px;
+  font-weight: 900;
+  color: white;
+}
+.textSubtitle {
+  font-size: 12px;
+}
+.subline {
+  width: 190px;
+  height: 2px;
+  background: white;
+}
+.parrafo {
+  font-size: 14px;
+  color: white;
+}
+.containerMapPoints {
+  position: relative;
+}
+.btnMap {
+  position: absolute;
+  top: 8%;
+  left: 52%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 4px solid #6f8ee7;
+  transform: rotate(134deg);
+  z-index: 10;
+}
+.btnMapTwo {
+  position: absolute;
+  top: 28%;
+  left: 47%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 4px solid #6f8ee7;
+  transform: rotate(134deg);
+  z-index: 10;
+}
+.btnMapThree {
+  position: absolute;
+  top: 45%;
+  left: 43%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 4px solid #6f8ee7;
+  transform: rotate(134deg);
+  z-index: 10;
+}
+.btnMapFour {
+  position: absolute;
+  top: 65%;
+  left: 42%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 4px solid #6f8ee7;
+  transform: rotate(134deg);
+  z-index: 10;
+}

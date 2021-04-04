@@ -1,0 +1,131 @@
+footer {
+  background: #f3f7fa;
+}
+.menuFooter {
+  max-width: 1540px;
+  margin: auto;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.terms {
+  width: 100%;
+  display: flex;
+  background: #13265c;
+  color: white;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  height: 60px;
+}
+.terms p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.kull {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+.containerMenuOne {
+  margin: 20px 0px;
+}
+.containerMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titleMenu {
+  font-size: 18px;
+  color: #12275f;
+  /* margin-left: 25px; */
+  font-weight: 600;
+}
+.optionMenu {
+  font-size: 14px;
+  margin: 10px 0px;
+}
+.textMenuOne {
+  font-size: 14px;
+}
+.logoKull {
+  margin-top: -10px;
+  margin-left: 10px;
+}
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022";
+  color: #6f8ee7;
+  font-weight: 900;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+@media (max-width: 700px) {
+  .menuFooter {
+    padding: 20px 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  .textMenuOne {
+    font-size: 12px;
+  }
+  .optionMenu {
+    font-size: 12px;
+    margin: 10px 0px;
+  }
+  .titleMenu {
+    font-size: 14px;
+  }
+  .containerMenuOne {
+    /* width: 160px; */
+    margin: 20px 10px;
+  }
+  .containerMenu {
+    /* width: 160px; */
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .textMenuOne {
+    font-size: 12px;
+  }
+  .optionMenu {
+    font-size: 12px;
+    margin: 10px 0px;
+  }
+  .titleMenu {
+    font-size: 14px;
+  }
+  .containerMenuOne {
+    /* width: 160px; */
+    margin: 20px 0px;
+  }
+  .containerMenu {
+    width: 160px;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .terms p {
+    font-size: 10px;
+  }
+  .logoKull {
+    margin-top: -10px;
+    margin-left: 10px;
+  }
+}

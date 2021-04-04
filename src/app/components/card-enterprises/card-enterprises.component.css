@@ -1,0 +1,75 @@
+.containerEnterprises {
+  width: 600px;
+  border-right: 1px solid #e5e5e5;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.containerEnterprises_title {
+  margin-bottom: 60px;
+  color: #12275f;
+  font-weight: 700;
+  font-size: 30px;
+}
+.containerEnterprises_enterprises {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.enterprises_card {
+  margin-right: 30px;
+  /* width: 300px; */
+  /* border: 1px solid red; */
+}
+p {
+  margin-top: 20px;
+  color: #56585f;
+}
+.card_image {
+  width: 100%;
+}
+
+@media (max-width: 1320px) {
+  .containerEnterprises {
+    border-right: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .containerEnterprises {
+    width: 500px;
+  }
+  .enterprises_card {
+    margin-right: 25px;
+  }
+  .containerEnterprises_title {
+    font-size: 28px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 568px) {
+  .containerEnterprises {
+    width: 450px;
+  }
+}
+@media (max-width: 460px) {
+  .containerEnterprises_title {
+    font-size: 24px;
+    text-align: center;
+  }
+  .containerEnterprises {
+    width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .containerEnterprises_title {
+    font-size: 22px;
+    text-align: center;
+  }
+  .containerEnterprises {
+    width: 360px;
+  }
+}

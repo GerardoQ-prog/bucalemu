@@ -1,0 +1,75 @@
+.containerCertificates {
+  width: 600px;
+  /* border: 1px solid red; */
+  padding: 30px;
+}
+.containerCertificates_certificates {
+  display: flex;
+}
+.enterprises_card {
+  width: 100%;
+}
+.containerCertificates_title {
+  margin-bottom: 60px;
+  color: #12275f;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: -25px;
+}
+
+.containerButton {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+}
+.buttonSust {
+  border: none;
+  outline: none;
+  background: #6f8ee7;
+  color: white;
+  height: 50px;
+  width: 200px;
+  font-weight: 700;
+  transition: all 500ms ease;
+}
+
+.buttonSust:hover {
+  background: white;
+  color: #12275f;
+  border: 1px solid #6f8ee7;
+}
+
+.buttonSust:active {
+  background: #617dcb;
+  color: white;
+  border: none;
+}
+@media (max-width: 700px) {
+  .containerCertificates {
+    width: 500px;
+  }
+}
+
+@media (max-width: 568px) {
+  .containerCertificates {
+    width: 450px;
+  }
+}
+
+@media (max-width: 460px) {
+  .containerCertificates_title {
+    font-size: 24px;
+  }
+  .containerCertificates {
+    width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .containerCertificates_title {
+    font-size: 24px;
+  }
+  .containerCertificates {
+    width: 360px;
+  }
+}
