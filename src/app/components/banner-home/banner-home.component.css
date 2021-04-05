@@ -36,7 +36,11 @@
     border: 1px solid red;
   }
 } */
-
+@media screen and (min-width: 760px) {
+  .separador{
+    padding-top: 100px;
+  }
+}
 .dot {
   background: white;
   border-radius: 50px;

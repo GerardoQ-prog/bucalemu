@@ -1,77 +1,42 @@
 <header class="headerContainer">
-    <!-- <div class="options_lang">
-        <button class="btnDenuncias">Portal Denuncias <img src="./assets/images/denuncias.svg"></button>
-        <button class="btnSaltus"><img src="./assets/images/saltus.svg"></button>
-        <select class="selectLanguage">
-            <option class="optionLanguage">Español</option>
-            <option class="optionLanguage">Ingles</option>
-        </select>
-    </div> -->
-    <nav class="headerContainer_nav">
-        <div class="nav_logo">
+    <nav class="navbar navbar-expand-xl navbar-light fixed-top bgcolor">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/images/logoHeader.svg" class="logoOne" />
+            <img src="./assets/images/logomid.svg" class="logoTwo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="menuMobil"src="../../../assets/images/menu mobile.png">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 
-            <img src="./assets/images/logoHeader.svg" class="logoOne">
-            <img src="./assets/images/logomid.svg" class="logoTwo">
-        </div>
-        <div class="nav_options">
-            <div class="options_lang">
+                <div class="navbar-nav text-center efecto">
+                    <a class="nav-item nav-link text-white py-3 link1" href="#">Inicio</a>
+                    <a class="nav-item nav-link text-white  py-3" (click)="goAbout()">Quienes somos</a>
+                    <a class="nav-item nav-link text-white  py-3" (click)="goServices()">Servicios</a>
+                    <a class="nav-item nav-link text-white  py-3" (click)="goCoverage()">Cobertura</a>
+                    <a class="nav-item nav-link text-white  py-3">Sustentabilidad</a>
+                    <a class="nav-item nav-link text-white py-3" href="#">Contacto</a>
+                    <a class="nav-item nav-link text-white py-3" href="#">Noticias</a>
+                </div>
+                <div class="navbar-nav pt-3 options_lang">
 
-                <button class="btnDenuncias">Portal Denuncias <img src="./assets/images/denuncias.svg"></button>
+                    <button class="btnSharePoint">Sharepoint</button>
+                    <button class="btnDenuncias mt-4">
+                        Portal Denuncias <img src="./assets/images/denuncias.svg" />
+                    </button>
 
-                <button class="btnSaltus"><img src="./assets/images/saltus.svg"></button>
-                <select class="selectLanguage">
-                    <option class="optionLanguage">Español</option>
-                    <option class="optionLanguage">Ingles</option>
-                </select>
-            </div>
-            <div class="options_routes">
-                <h4 class="inicio" (click)="goHome()">Inicio</h4>
-                <h4 (click)="goAbout()">Quienes somos</h4>
-                <h4 (click)="goServices()">Servicios</h4>
-                <h4 (click)="goCoverage()">Cobertura</h4>
-                <h4>Sustentabilidad</h4>
-                <h4>Contacto</h4>
-                <h4>Noticias</h4>
+                    <button class="btnSaltus mt-4">
+                        <img src="./assets/images/saltus.svg" />
+                    </button>
 
-            </div>
+                    <select class="selectLanguage mt-4">
+                        <option class="optionLanguage">Español</option>
+                        <option class="optionLanguage">Ingles</option>
+                    </select>
+
+                </div>
         </div>
     </nav>
-
-    <!-- <nav class="navbar navbar-expand-lg " style="padding: 0px;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./assets/images/logomid.svg"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">XD</span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: flex-end;">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
-                    <li class="nav-item itemLink">
-                        Inicio
-                    </li>
-                    <li class="nav-item itemLink">
-                        Quienes somos
-                    </li>
-                    <li class="nav-item itemLink">
-                        Servicios
-                    </li>
-                    <li class="nav-item itemLink">
-                        Servicios
-                    </li>
-                    <li class="nav-item itemLink">
-                        Servicios
-                    </li>
-                    <li class="nav-item itemLink">
-                        Servicios
-                    </li>
-                    <li class="nav-item itemLink">
-                        Servicios
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    </nav> -->
-
+    <br />
 </header>
