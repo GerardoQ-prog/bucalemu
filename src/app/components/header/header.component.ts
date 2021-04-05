@@ -43,4 +43,5 @@ export class HeaderComponent implements OnInit {
   goCoverage() {
     this.router.navigate(['cobertura']);
   }
+
 }
