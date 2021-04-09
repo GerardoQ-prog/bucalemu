@@ -85,24 +85,54 @@
   z-index: 10;
 }
 
+/*
 .fa-times {
   position: absolute;
+  
   right: 20px;
   top: 80px;
-  background-color: #9cbe3e;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+*/
+
+/* PARA EL PRIMER MODAL => BOTON 01 */
+
+.header {
+  height: 100%;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 #fff;
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 22px;
+  color: #767676;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
 }
 
-/* PARA EL PRIMER MODAL => BOTON 01 */
-
 /* INICIO DE ESTILOS DE MODAL => MOVIL*/
 
 .content {
   position: absolute;
-  top: 20%;
+  opacity: 0;
+  top: 30.1%;
+  visibility: hidden;
+  width: 81vw;
+  height: 400px;
+  background: #fff;
+  left: 50%;
   right: -60.3%;
+  border-radius: 3px;
+  transition: 0.3s ease-in;
+  z-index: 668;
   transform: translate(-50%, -50%);
 }
 
@@ -112,13 +142,13 @@
   content: "";
   display: block;
   width: 2px;
-  height: 60px;
-  top: -30%;
+  height: 86px;
+  top: -26%;
   background: white;
   border-radius: 100px;
   position: absolute;
   bottom: -30px;
-  left: 54.5%;
+  left: 54.8%;
   z-index: -6;
 }
 
@@ -127,14 +157,14 @@
   display: block;
   width: 20px;
   height: 25px;
-  top: -7%;
+  top: -5%;
   border-radius: 100px;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
-  border-bottom: 30px solid #FFF;
+  border-bottom: 30px solid #fff;
   position: absolute;
   bottom: -35px;
-  left: 47.4%;
+  left: 44.9%;
   z-index: -5;
 }
 
@@ -144,18 +174,7 @@
   display: none;
 }
 
-.content {
-  opacity: 0;
-  visibility: hidden;
-  width: 100vw;
-  height: 200px;
-  background: white;
-  border-radius: 3px;
-  transition: .3s ease-in;
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .4);
-}
-
-#click:checked~.content {
+#click:checked ~ .content {
   opacity: 1;
   visibility: visible;
 }
@@ -163,26 +182,26 @@
 /* ESTILOS PARA LA INFORMACIÓN DENTRO DEL POPUP */
 
 .informacion-larga {
-  width: 90%;
-  height: 50%;
-  background: #FFF;
+  width: 100%;
+  height: 55%;
+  background: #fff;
 }
 
 h5 {
   position: relative;
   font-size: 1rem;
-  top: 13px;
-  right: 10%;
+  top: 50px;
+  right: -10%;
   font-weight: bold;
 }
 
 .informacion {
   position: absolute;
-  width: 65%;
-  height: 29%;
-  left: 23%;
-  top: 20%;
-  background: #FFF;
+  width: 85%;
+  height: 25%;
+  left: 8%;
+  top: 29%;
+  background: #fff;
 }
 
 .parrafo-info {
@@ -193,30 +212,26 @@ h5 {
 
 .history {
   position: absolute;
-  width: 20%;
-  top: 10px;
-  left: 1%;
+  top: 15px;
+  left: 7%;
+  width: 30%;
 }
 
 .ubicacion {
-  width: 90%;
+  width: 100%;
   height: 50%;
-  background: #FFF;
+  background: #fff;
 }
 
 .ubicacion-info {
   position: absolute;
-  width: 35%;
-  top: 60%;
-  left: 1%;
-  background: #FFF;
+  width: 85%;
+  left: 8%;
+  text-align: left;
+  background: #fff;
 }
 
-.contact-info1 {
-  font-size: 80%;
-  font-family: arial;
-}
-
+.contact-info1,
 .contact-info2 {
   font-size: 80%;
   font-family: arial;
@@ -224,20 +239,14 @@ h5 {
 
 .ubicacion-info2 {
   position: absolute;
-  width: 50%;
-  height: 43%;
-  left: 40%;
-  top: 55%;
-  background: #FFF;
+  width: 85%;
+  left: 8%;
+  height: 20%;
+  top: 72%;
+  background: #fff;
 }
 
-.direccion-info1 {
-  text-align: left;
-  padding-top: 10px;
-  font-size: 80%;
-  font-family: arial;
-}
-
+.direccion-info1,
 .direccion-info2 {
   text-align: left;
   font-size: 80%;
@@ -246,270 +255,1420 @@ h5 {
 
 /* FIN => ESTILOS PARA LA INFORMACIÓN DENTRO DEL POPUP */
 
-.header {
+/* FINN ESTILOS PARA MODAL POPUP 1*/
+
+/* PARA EL PRIMER MODAL => BOTON 02 */
+
+/* INICIO DE ESTILOS DE MODAL => MOVIL*/
+
+.content2 {
+  position: absolute;
+  opacity: 0;
+  top: 50.3%;
+  visibility: hidden;
+  width: 81vw;
+  height: 400px;
+  background: #fff;
+  left: 50%;
+  right: -60.3%;
+  border-radius: 3px;
+  transition: 0.3s ease-in;
+  z-index: 668;
+  transform: translate(-50%, -50%);
+}
+
+/* ESTILOS PARA LA FLECHA*/
+
+.content2::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 90px;
+  top: -26%;
+  background: white;
+  border-radius: 100px;
+  position: absolute;
+  bottom: -30px;
+  left: 50.1%;
+  z-index: -6;
+}
+
+.content2::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 25px;
+  top: -5%;
+  border-radius: 100px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #fff;
+  position: absolute;
+  bottom: -35px;
+  left: 40%;
+  z-index: -5;
+}
+
+/* FIN DE ESTILOS PARA LA FLECHA*/
+
+#click2 {
+  display: none;
+}
+
+#click2:checked ~ .content2 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header2 {
   height: 100%;
-  background: #FFF;
+  background: #fff;
   overflow: hidden;
   border-radius: 3px 3px 0 0;
   overflow: hidden;
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
-.fa-times {
+/* FIN ESTILOS PARA MODAL POPUP 2*/
+
+/* PARA EL PRIMER MODAL => BOTON 03 */
+
+/* INICIO DE ESTILOS DE MODAL => MOVIL*/
+
+.content3 {
   position: absolute;
-  right: 20px;
-  top: 12px;
-  color: #e8f7fc;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
+  opacity: 0;
+  top: 68.4%;
+  visibility: hidden;
+  width: 81vw;
+  height: 400px;
+  background: #fff;
+  left: 50%;
+  right: -60.3%;
+  border-radius: 3px;
+  transition: 0.3s ease-in;
+  z-index: 668;
+  transform: translate(-50%, -50%);
 }
+
+/* ESTILOS PARA LA FLECHA*/
+
+.content3::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 105px;
+  top: -30%;
+  background: white;
+  border-radius: 100px;
+  position: absolute;
+  bottom: -30px;
+  left: 45.7%;
+  z-index: -6;
+}
+
+.content3::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 25px;
+  top: -5%;
+  border-radius: 100px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #fff;
+  position: absolute;
+  bottom: -35px;
+  left: 36%;
+  z-index: -5;
+}
+
+/* FIN DE ESTILOS PARA LA FLECHA*/
+
+#click3 {
+  display: none;
+}
+
+#click3:checked ~ .content3 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header3 {
+  height: 100%;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* FINN ESTILOS PARA MODAL POPUP 3*/
+
+/* PARA EL PRIMER MODAL => BOTON 04 */
+
+/* INICIO DE ESTILOS DE MODAL => MOVIL*/
+
+.content4 {
+  position: absolute;
+  opacity: 0;
+  top: 88.4%;
+  visibility: hidden;
+  width: 81vw;
+  height: 400px;
+  background: #fff;
+  left: 50%;
+  right: -60.3%;
+  border-radius: 3px;
+  transition: 0.3s ease-in;
+  z-index: 668;
+  transform: translate(-50%, -50%);
+}
+
+/* ESTILOS PARA LA FLECHA*/
+
+.content4::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 105px;
+  top: -30%;
+  background: white;
+  border-radius: 100px;
+  position: absolute;
+  bottom: -30px;
+  left: 44.1%;
+  z-index: -6;
+}
+
+.content4::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 25px;
+  top: -5%;
+  border-radius: 100px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #fff;
+  position: absolute;
+  bottom: -35px;
+  left: 34.4%;
+  z-index: -5;
+}
+
+/* FIN DE ESTILOS PARA LA FLECHA*/
+
+#click4 {
+  display: none;
+}
+
+#click4:checked ~ .content4 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header4 {
+  height: 100%;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* FINN ESTILOS PARA MODAL*/
 
 /* MEDIA QUERYS*/
 
-@media (max-width: 640px) {
+@media screen and (min-width: 1024px) and (max-width: 1336px) {
+  /* INCIO => POPUP 1 */
+  .content {
+      top: 25%;
+      height: 300px;
+  }
+  /* ESTILOS PARA LA FLECHA*/
   .content::before {
-    content: "";
-    display: block;
-    left: 80%;
+      height: 90px;
+      left: 53.6%;
   }
   .content::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 80%;
+      top: -4%;
+      left: 50.3%;
+  }
+  .history {
+      width: 20%;
+  }
+  h5 {
+      right: 11%;
+      font-size: 1.5rem;
+      top: 23px;
+  }
+  .informacion {
+      top: 22%;
+      left: 30%;
+      height: 30%;
+      font-size: 1.6rem;
+  }
+  .ubicacion {
+      width: 100%;
+      height: 50%;
+      font-size: 1.5rem;
   }
   .ubicacion-info {
-    position: absolute;
-    width: 35%;
-    top: 55%;
-    left: 1%;
-    background: #FFF;
+      width: 42%;
+      top: 56%;
+      height: 42%;
   }
-}
-
-@media (max-width: 736px) {
-  .content::before {
-    content: "";
-    display: block;
-    left: 20%;
+  .ubicacion-info2 {
+      width: 42%;
+      left: 50%;
+      height: 41%;
+      top: 56%;
   }
-  .content::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 47%;
-  }
-}
-
-@media (max-width: 568px) {
-  .content::before {
-    content: "";
-    display: block;
-    left: 58.1%;
-  }
-  .content::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 49%;
-  }
-}
-
-  /* FIN => MEDIA QUERYS*/
-  /* FINN ESTILOS PARA MODAL POPUP 1*/
-  /* PARA EL PRIMER MODAL => BOTON 02 */
-  /* INICIO DE ESTILOS DE MODAL => MOVIL*/
+  /* FIN => POPUP 1 */
+  /* INCIO => POPUP 2 */
   .content2 {
-    position: absolute;
-    top: 40%;
-    right: -60.3%;
-    transform: translate(-50%, -50%);
-    z-index: 60;
+      top: 45%;
+      height: 300px;
   }
   /* ESTILOS PARA LA FLECHA*/
   .content2::before {
-    content: "";
-    display: block;
-    width: 2px;
-    height: 60px;
-    top: -26%;
-    background: white;
-    border-radius: 100px;
-    position: absolute;
-    bottom: -30px;
-    left: 50.1%;
-    z-index: -6;
+      height: 90px;
+      left: 47.8%;
   }
   .content2::after {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 25px;
-    top: -7%;
-    border-radius: 100px;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 30px solid #FFF;
-    position: absolute;
-    bottom: -35px;
-    left: 43%;
-    z-index: -5;
+      top: -4%;
+      left: 44.4%;
   }
-  /* FIN DE ESTILOS PARA LA FLECHA*/
-  #click2 {
-    display: none;
-  }
-  .content2 {
-    opacity: 0;
-    visibility: hidden;
-    width: 100vw;
-    height: 200px;
-    background: white;
-    border-radius: 3px;
-    transition: .3s ease-in;
-    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .4);
-  }
-  #click2:checked~.content2 {
-    opacity: 1;
-    visibility: visible;
-  }
-  .header2 {
-    height: 30px;
-    background: #FFF;
-    overflow: hidden;
-    border-radius: 3px 3px 0 0;
-    overflow: hidden;
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .2);
-  }
-  /* FINN ESTILOS PARA MODAL*/
-  /* PARA EL PRIMER MODAL => BOTON 03 */
-  /* INICIO DE ESTILOS DE MODAL => MOVIL*/
+  /* FIN => POPUP 2*/
+  /* INCIO => POPUP 3 */
   .content3 {
-    position: absolute;
-    top: 57.5%;
-    right: -60.3%;
-    transform: translate(-50%, -50%);
-    z-index: 60;
+      top: 63%;
+      height: 300px;
   }
   /* ESTILOS PARA LA FLECHA*/
   .content3::before {
-    content: "";
-    display: block;
-    width: 2px;
-    height: 60px;
-    top: -30%;
-    background: white;
-    border-radius: 100px;
-    position: absolute;
-    bottom: -30px;
-    left: 46.4%;
-    z-index: -6;
+      height: 90px;
+      left: 42.9%;
   }
   .content3::after {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 25px;
-    top: -7%;
-    border-radius: 100px;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 30px solid #FFF;
-    position: absolute;
-    bottom: -35px;
-    left: 39.4%;
-    z-index: -5;
+      top: -4%;
+      left: 39.3%;
   }
-  /* FIN DE ESTILOS PARA LA FLECHA*/
-  #click3 {
-    display: none;
-  }
-  .content3 {
-    opacity: 0;
-    visibility: hidden;
-    width: 100vw;
-    height: 200px;
-    background: white;
-    border-radius: 3px;
-    transition: .3s ease-in;
-    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .4);
-  }
-  #click3:checked~.content3 {
-    opacity: 1;
-    visibility: visible;
-  }
-  .header3 {
-    height: 30px;
-    background: #FFF;
-    overflow: hidden;
-    border-radius: 3px 3px 0 0;
-    overflow: hidden;
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .2);
-  }
-  /* FINN ESTILOS PARA MODAL*/
-  /* PARA EL PRIMER MODAL => BOTON 04 */
-  /* INICIO DE ESTILOS DE MODAL => MOVIL*/
+  /* FIN => POPUP 3*/
+  /* INCIO => POPUP 4 */
   .content4 {
-    position: absolute;
-    top: 77.6%;
-    right: -60.3%;
-    transform: translate(-50%, -50%);
-    z-index: 60;
+      top: 82.8%;
+      height: 300px;
   }
   /* ESTILOS PARA LA FLECHA*/
   .content4::before {
-    content: "";
-    display: block;
-    width: 2px;
-    height: 60px;
-    top: -30%;
-    background: white;
-    border-radius: 100px;
-    position: absolute;
-    bottom: -30px;
-    left: 45.4%;
-    z-index: -6;
+      height: 90px;
+      left: 41.8%;
   }
   .content4::after {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 25px;
-    top: -7%;
+      top: -4%;
+      left: 38.2%;
+  }
+  /* FIN => POPUP 4 */
+}
+
+@media screen and (min-width: 1920px) and (max-width: 2560px) {
+  /* INCIO => POPUP 1 */
+
+  /*NOTA => Revisar por que no cierra con el boton "X" */
+
+  .content {
+    top: 9%;
+    width: 22vw;
+    height: 250px;
+    left: 15%;
+  }
+  /* ESTILOS PARA LA FLECHA*/
+
+  .content::before {
+    width: 230px;
+    height: 2px;
+    top: 48%;
+    bottom: -30px;
+    left: 99.6%;
+  }
+
+  .content::after {
+    width: 50px;
+    height: 10px;
+    top: 36.5%;
+    transform: rotate(45deg);
+    border-radius: 2px;
+    border-top: 30px solid #fff;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid #fff;
+    bottom: -35px;
+    left: 88%;
+  }
+
+  .history {
+    left: 3%;
+    width: 30%;
+  }
+
+  h5 {
+    left: -1%;
+    font-size: 1rem;
+    top: 30px;
+  }
+  .informacion {
+    width: 56%;
+    top: 22%;
+    height: 33%;
+    left: 37%;
+    font-size: 1rem;
+  }
+
+  .ubicacion {
+    width: 100%;
+    height: 45%;
+    font-size: 1rem;
+  }
+
+  .ubicacion-info {
+    width: 45%;
+    top: 65%;
+    left: 3%;
+    height: 25%;
+  }
+
+  .ubicacion-info2 {
+    width: 42%;
+    height: 30%;
+    left: 50%;
+    top: 65%;
+  }
+  /* FIN => POPUP 1 */
+
+  /* INCIO => POPUP 2 */
+
+  .header2 {
+    box-shadow: 0 0 0 0 #fff;
+  }
+  .content2 {
+    top: 29%;
+    width: 22vw;
+    height: 250px;
+    left: 81%;
+  }
+  /* ESTILOS PARA LA FLECHA*/
+
+  .content2::before {
+    width: 200px;
+    height: 2px;
+    top: 48%;
+    bottom: -30px;
+    left: -41%;
+  }
+
+  .content2::after {
+    width: 50px;
+    height: 10px;
+    top: 36.5%;
+    transform: rotate(-45deg);
+    border-radius: 2px;
+    border-top: 30px solid #fff;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid #fff;
+    bottom: -35px;
+    left: -2.5%;
+  }
+
+  /* FIN => POPUP 2 */
+
+  /* INCIO => POPUP 3 */
+
+  .header3 {
+    box-shadow: 0 0 0 0 #fff;
+  }
+
+  .content3 {
+    top: 46%;
+    width: 22vw;
+    height: 250px;
+    left: 15%;
+  }
+  /* ESTILOS PARA LA FLECHA*/
+
+  .content3::before {
+    width: 100px;
+    height: 2px;
+    top: 48%;
+    bottom: -30px;
+    left: 105%;
+  }
+
+  .content3::after {
+    width: 50px;
+    height: 10px;
+    top: 36.5%;
+    transform: rotate(45deg);
+    border-radius: 2px;
+    border-top: 30px solid #fff;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid #fff;
+    bottom: -35px;
+    left: 88%;
+  }
+
+  /* FIN => POPUP 3 */
+
+  /* INCIO => POPUP 4 */
+
+  .header4 {
+    box-shadow: 0 0 0 0 #fff;
+  }
+
+  .content4 {
+    top: 66%;
+    width: 22vw;
+    height: 250px;
+    left: 81%;
+  }
+  /* ESTILOS PARA LA FLECHA*/
+
+  .content4::before {
+    width: 215px;
+    height: 2px;
+    top: 48%;
     border-radius: 100px;
+    bottom: -30px;
+    left: -55%;
+  }
+
+  .content4::after {
+    width: 50px;
+    height: 10px;
+    top: 36.5%;
+    transform: rotate(-45deg);
+    border-radius: 2px;
+    border-top: 30px solid #fff;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid #fff;
+    bottom: -35px;
+    left: -2.5%;
+  }
+
+  /* FIN => POPUP 4 */
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+  /* INCIO => POPUP 1 */
+
+  /*NOTA => Revisar por que no cierra con el boton "X" */
+
+  .content {
+    top: 9%;
+    width: 30vw;
+    height: 210px;
+    left: 21%;
+  }
+  /* ESTILOS PARA LA FLECHA*/
+
+  .content::before {
+    width: 163px;
+    height: 2px;
+    top: 47.7%;
+    border-radius: 100px;
+    bottom: -30px;
+    left: 104%;
+  }
+
+  .content::after {
+    width: 30px;
+    height: 10px;
+    top: 35.3%;
+    transform: rotate(45deg);
+    border-radius: 2px;
+    border-top: 25px solid #fff;
+    border-bottom: 25px solid transparent;
+    border-right: 25px solid #fff;
+    bottom: -35px;
+    left: 88%;
+  }
+
+  .history {
+    left: 3%;
+    width: 30%;
+  }
+
+  h5 {
+    right: 1%;
+    font-size: 0.8rem;
+    top: 25px;
+  }
+  .informacion {
+    width: 53%;
+    top: 23%;
+    height: 30%;
+    left: 37%;
+    font-size: 0.8rem;
+  }
+
+  .ubicacion {
+    width: 100%;
+    height: 45%;
+    font-size: 0.8rem;
+  }
+
+  .ubicacion-info {
+    width: 45%;
+    top: 65%;
+    left: 3%;
+    height: 25%;
+  }
+
+  .ubicacion-info2 {
+    width: 42%;
+    height: 30%;
+    left: 50%;
+    top: 65%;
+  }
+  /* FIN => POPUP 1 */
+
+  /* INCIO => POPUP 2 */
+
+  .header2 {
+    box-shadow: 0 0 0 0 #fff;
+  }
+
+  .content2 {
+    top: 29%;
+    width: 30vw;
+    height: 210px;
+    left: 80%;
+  }
+  /* ESTILOS PARA LA FLECHA*/
+
+  .content2::before {
+    width: 200px;
+    height: 2px;
+    top: 47.8%;
+    border-radius: 100px;
+    bottom: -30px;
+    left: -49.8%;
+  }
+
+  .content2::after {
+    width: 50px;
+    height: 10px;
+    top: 34%;
+    transform: rotate(-45deg);
+    border-radius: 2px;
+    border-top: 30px solid #fff;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid #fff;
+    bottom: -35px;
+    left: -2.5%;
+  }
+
+  /* FIN => POPUP 2 */
+
+  /* INCIO => POPUP 3 */
+
+  .header3 {
+    box-shadow: 0 0 0 0 #fff;
+  }
+
+  .content3 {
+    top: 46%;
+    width: 30vw;
+    height: 210px;
+    left: 18%;
+  }
+  /* ESTILOS PARA LA FLECHA*/
+
+  .content3::before {
+    width: 100px;
+    height: 2px;
+    top: 47%;
+    border-radius: 100px;
+    bottom: -30px;
+    left: 102%;
+  }
+
+  .content3::after {
+    width: 50px;
+    height: 10px;
+    top: 34.8%;
+    transform: rotate(45deg);
+    border-radius: 2px;
+    border-top: 25px solid #fff;
+    border-bottom: 25px solid transparent;
+    border-right: 25px solid #fff;
+    bottom: -35px;
+    left: 88%;
+  }
+
+  /* FIN => POPUP 3 */
+
+  /* INCIO => POPUP 4 */
+
+  .header4 {
+    box-shadow: 0 0 0 0 #fff;
+  }
+
+  .content4 {
+    top: 66%;
+    width: 30vw;
+    height: 210px;
+    left: 80%;
+  }
+  /* ESTILOS PARA LA FLECHA*/
+
+  .content4::before {
+    width: 260px;
+    height: 2px;
+    top: 47.8%;
+    border-radius: 100px;
+    bottom: -30px;
+    left: -65.8%;
+  }
+
+  .content4::after {
+    width: 50px;
+    height: 10px;
+    top: 34%;
+    transform: rotate(-45deg);
+    border-radius: 2px;
+    border-top: 30px solid #fff;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid #fff;
+    bottom: -35px;
+    left: -2.5%;
+  }
+
+  /* FIN => POPUP 4 */
+}
+
+@media screen and (min-width: 756px) and (max-width: 768px) {
+  .content::before {
+    height: 90px;
+    left: 54%;
+  }
+
+  .content::after {
+    top: -4%;
+    left: 49.5%;
+  }
+
+  .content {
+    top: 22%;
+    height: 240px;
+  }
+  h5 {
+    right: 12%;
+    font-size: 1rem;
+    top: 23px;
+  }
+  .informacion {
+    width: 64%;
+    left: 30%;
+    top: 23%;
+  }
+  .history {
+    width: 20%;
+  }
+
+  .ubicacion {
+    width: 100%;
+    height: 50%;
+    font-size: 1.2rem;
+  }
+
+  .ubicacion-info {
+    width: 42%;
+    height: 42%;
+  }
+
+  .contact-info1,
+  .contact-info2 {
+    padding-top: 10px;
+  }
+  .ubicacion-info2 {
+    width: 42%;
+    left: 50%;
+    height: 38%;
+    top: 59.5%;
+  }
+
+  .content2 {
+    top: 42%;
+    height: 240px;
+  }
+
+  .content2::before {
+    height: 90px;
+    left: 48%;
+  }
+
+  .content2::after {
+    top: -4%;
+    left: 43.2%;
+  }
+
+  .content3 {
+    top: 59.5%;
+    height: 240px;
+  }
+
+  .content3::before {
+    height: 90px;
+    left: 43.5%;
+  }
+
+  .content3::after {
+    top: -4%;
+    left: 38.6%;
+  }
+
+  .content4 {
+    top: 79.6%;
+    height: 240px;
+  }
+
+  .content4::before {
+    height: 90px;
+    left: 42%;
+  }
+
+  .content4::after {
+    top: -4%;
+    left: 37%;
+  }
+}
+
+@media screen and (min-width: 762px) and (max-width: 768px) {
+  .content {
+    top: 22%;
+    height: 245px;
+  }
+
+  .content::before {
+    height: 90px;
+    left: 54%;
+  }
+
+  .content::after {
+    top: -4%;
+    left: 49.5%;
+  }
+
+  h5 {
+    right: 12%;
+    font-size: 1rem;
+    top: 23px;
+  }
+  .informacion {
+    width: 64%;
+    top: 21%;
+    height: 33%;
+    left: 30%;
+    font-size: 1.2rem;
+  }
+
+  .ubicacion {
+    width: 100%;
+    height: 50%;
+    font-size: 1.2rem;
+  }
+
+  .ubicacion-info {
+    width: 42%;
+    height: 42%;
+  }
+
+  .contact-info1,
+  .contact-info2 {
+    padding-top: 10px;
+  }
+  .ubicacion-info2 {
+    width: 42%;
+    left: 50%;
+    height: 38%;
+    top: 59.5%;
+  }
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1680px) {
+  /* INCIO => POPUP 1 */
+
+  /*NOTA => Revisar por que no cierra con el boton "X" */
+
+  .content {
+    top: 9%;
+    width: 35vw;
+    height: 220px;
+    left: 20%;
+  }
+  /* ESTILOS PARA LA FLECHA*/
+
+  .content::before {
+    width: 138px;
+    height: 2px;
+    top: 48%;
+    bottom: -30px;
+    left: 99.6%;
+  }
+
+  .content::after {
+    width: 50px;
+    height: 10px;
+    top: 37%;
+    transform: rotate(45deg);
+    border-radius: 2px;
+    border-top: 23px solid #fff;
+    border-bottom: 23px solid transparent;
+    border-right: 23px solid #fff;
+    bottom: -35px;
+    left: 88%;
+  }
+
+  .history {
+    left: 3%;
+    width: 35%;
+  }
+
+  h5 {
+    left: 3%;
+    font-size: 0.9rem;
+    top: 30px;
+  }
+  .informacion {
+    width: 50%;
+    top: 24%;
+    height: 36%;
+    left: 40%;
+    font-size: 0.8rem;
+  }
+
+  .ubicacion {
+    width: 100%;
+    height: 45%;
+    font-size: 0.8rem;
+  }
+
+  .ubicacion-info {
+    width: 45%;
+    top: 63%;
+    left: 3%;
+    height: 25%;
+  }
+
+  .ubicacion-info2 {
+    width: 42%;
+    height: 30%;
+    left: 50%;
+    top: 63%;
+  }
+  /* FIN => POPUP 1 */
+
+  /* INCIO => POPUP 2 */
+
+  .header2 {
+    box-shadow: 0 0 0 0 #fff;
+  }
+  .content2 {
+    top: 29%;
+    width: 35vw;
+    height: 220px;
+    left: 81%;
+  }
+  /* ESTILOS PARA LA FLECHA*/
+
+  .content2::before {
+    width: 200px;
+    height: 2px;
+    top: 48%;
+    bottom: -30px;
+    left: -37%;
+  }
+
+  .content2::after {
+    width: 50px;
+    height: 10px;
+    top: 36.5%;
+    transform: rotate(-45deg);
+    border-radius: 2px;
+    border-top: 25px solid #fff;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid #fff;
+    bottom: -35px;
+    left: -2.5%;
+  }
+
+  /* FIN => POPUP 2 */
+
+  /* INCIO => POPUP 3 */
+
+  .header3 {
+    box-shadow: 0 0 0 0 #fff;
+  }
+
+  .content3 {
+    top: 46%;
+    width: 35vw;
+    height: 220px;
+    left: 18%;
+  }
+  /* ESTILOS PARA LA FLECHA*/
+
+  .content3::before {
+    width: 47px;
+    height: 2px;
+    top: 47.8%;
+    bottom: -30px;
+    left: 105%;
+  }
+
+  .content3::after {
+    width: 50px;
+    height: 10px;
+    top: 36.2%;
+    transform: rotate(45deg);
+    border-radius: 2px;
+    border-top: 25px solid #fff;
+    border-bottom: 25px solid transparent;
+    border-right: 25px solid #fff;
+    bottom: -35px;
+    left: 88%;
+  }
+
+  /* FIN => POPUP 3 */
+
+  /* INCIO => POPUP 4 */
+
+  .header4 {
+    box-shadow: 0 0 0 0 #fff;
+  }
+
+  .content4 {
+    top: 66%;
+    width: 35vw;
+    height: 220px;
+    left: 81%;
+  }
+  /* ESTILOS PARA LA FLECHA*/
+
+  .content4::before {
+    width: 215px;
+    height: 2px;
+    top: 48%;
+    border-radius: 100px;
+    bottom: -30px;
+    left: -51%;
+  }
+
+  .content4::after {
+    width: 50px;
+    height: 10px;
+    top: 36.5%;
+    transform: rotate(-45deg);
+    border-radius: 2px;
+    border-top: 25px solid #fff;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid #fff;
+    bottom: -35px;
+    left: -2.5%;
+  }
+
+  /* FIN => POPUP 4 */
+}
+
+@media screen and (min-width: 1356px) and (max-width: 1680px) {
+  /* INICIO =>  POPUP 1 */
+  .content {
+    height: 240px;
+  }
+
+  .content::before {
+    width: 145px;
+    height: 2px;
+    top: 48%;
+    bottom: -30px;
+    left: 99.6%;
+  }
+
+  .content::after {
+    width: 50px;
+    height: 10px;
+    top: 35.8%;
+    transform: rotate(45deg);
+    border-radius: 2px;
+    border-top: 30px solid #fff;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid #fff;
+    bottom: -35px;
+    left: 88%;
+  }
+
+  h5 {
+    left: -5%;
+    font-size: 1rem;
+    top: 30px;
+  }
+
+  .informacion {
+    width: 56%;
+    left: 35%;
+    font-size: 1rem;
+  }
+
+  .history {
+    left: 3%;
+    width: 28%;
+  }
+
+  .ubicacion {
+    width: 100%;
+    height: 45%;
+    font-size: 1rem;
+  }
+
+  .ubicacion-info {
+    width: 45%;
+    top: 65%;
+    left: 3%;
+    height: 25%;
+  }
+
+  .ubicacion-info2 {
+    width: 42%;
+    height: 33%;
+    left: 50%;
+    top: 65%;
+  }
+  /* FIN =>  POPUP 1 */
+
+  /* INICIO =>  POPUP 2 */
+  .content2 {
+    height: 240px;
+  }
+
+  .content2::before {
+    left: -30.8%;
+  }
+
+  .content2::after {
+    border-top: 21px solid #fff;
+    border-bottom: 21px solid transparent;
+    border-right: 21px solid #fff;
+    top: 38.5%;
+  }
+  /* FIN =>  POPUP 2 */
+
+  /* INICIO =>  POPUP 3 */
+  .content3 {
+    height: 240px;
+  }
+
+  .content3::before {
+    left: 102.5%;
+  }
+
+  .content3::after {
+    border-top: 30px solid #fff;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid #fff;
+  }
+  /* FIN =>  POPUP 3 */
+
+  /* INICIO =>  POPUP 4 */
+  .content4 {
+    height: 240px;
+  }
+
+  .content4::before {
+    left: -43.5%;
+  }
+
+  .content4::after {
+    border-top: 21px solid #fff;
+    border-bottom: 21px solid transparent;
+    border-right: 21px solid #fff;
+    top: 38.7%;
+  }
+  /* FIN =>  POPUP 4 */
+}
+
+
+@media screen and (min-width: 466px) and (max-width: 1056px) {
+  /* INICIO =>  POPUP 1 */
+  .content {
+    top: 17.8%;
+    width: 81vw;
+    height: 160px;
+    left: 50%;
+    right: -60.3%;
+  }
+
+  .content::before {
+    top: -26%;
+    left: 54.8%;
+  }
+
+  .content::after {
+    top: -5%;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
-    border-bottom: 30px solid #FFF;
-    position: absolute;
-    bottom: -35px;
-    left: 38.2%;
-    z-index: -5;
+    border-bottom: 30px solid #fff;
+    left: 47%;
   }
-  /* FIN DE ESTILOS PARA LA FLECHA*/
-  #click4 {
-    display: none;
+  .fa-times {
+    font-size: 15px;
   }
+
+  h5 {
+    font-size: 0.7rem;
+    top: 20px;
+    left: -15%;
+  }
+  .informacion {
+    width: 65%;
+    height: 26%;
+    left: 25%;
+    top: 25%;
+    font-size: 0.7rem;
+  }
+
+  .history {
+    width: 20%;
+    left: 2%;
+  }
+
+  .ubicacion {
+    font-size: 0.7rem;
+  }
+
+  .ubicacion-info {
+    width: 35%;
+    left: 2%;
+  }
+
+  .ubicacion-info2 {
+    width: 50%;
+    left: 40%;
+    height: 40%;
+    top: 55%;
+  }
+  /* FIN =>  POPUP 1 */
+
+  /* INICIO =>  POPUP 2 */
+  .content2 {
+    top: 38%;
+    width: 81vw;
+    height: 160px;
+    left: 48%;
+    right: -60.3%;
+  }
+
+  .content2::before {
+    width: 2px;
+    top: -26%;
+    left: 51.5%;
+  }
+
+  .content2::after {
+    top: -5%;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #fff;
+    left: 43.8%;
+  }
+
+  /* FIN =>  POPUP 2 */
+
+  /* INICIO =>  POPUP 3 */
+  .content3 {
+    top: 55.5%;
+    width: 81vw;
+    height: 160px;
+    left: 48%;
+    right: -60.3%;
+  }
+
+  .content3::before {
+    top: -31%;
+    left: 47.1%;
+  }
+
+  .content3::after {
+    top: -5%;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #fff;
+    left: 39.5%;
+  }
+
+  /* FIN =>  POPUP 3 */
+
+  /* INICIO =>  POPUP 4 */
   .content4 {
-    opacity: 0;
-    visibility: hidden;
-    width: 100vw;
-    height: 200px;
-    background: white;
-    border-radius: 3px;
-    transition: .3s ease-in;
-    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .4);
+    top: 75.5%;
+    width: 81vw;
+    height: 160px;
+    left: 48%;
+    right: -60.3%;
   }
-  #click4:checked~.content4 {
-    opacity: 1;
-    visibility: visible;
+
+  .content4::before {
+    top: -31%;
+    left: 46%;
   }
-  .header4 {
+
+  .content4::after {
+    top: -5%;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #fff;
+    left: 38.2%;
+  }
+
+  /* FIN =>  POPUP 4 */
+}
+
+@media screen and (min-width: 574px) and (max-width: 1056px) {
+  .content {
+    height: 180px;
+  }
+  
+  .content::before {
     height: 30px;
-    background: #FFF;
-    overflow: hidden;
-    border-radius: 3px 3px 0 0;
-    overflow: hidden;
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .2);
+    top: -18%;
+    left: 54.5%;
   }
-  /* FINN ESTILOS PARA MODAL*/
+
+  .content::after {
+    top: -5%;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #fff;
+    left: 48%;
+  }
+  h5 {
+    font-size: 0.9rem;
+    top: 20px;
+    left: -15%;
+  }
+
+  .ubicacion-info {
+    width: 35%;
+    height: 32%;
+    top: 65%;
+    left: 2%;
+    font-size: 0.7rem;
+  }
+
+  .ubicacion-info2 {
+    width: 52%;
+    left: 40%;
+    height: 32%;
+    top: 65%;
+    font-size: 0.7rem;
+  }
+
+  .informacion {
+    font-size: 0.8rem;
+  }
+
+  .content2 {
+    height: 180px;
+  }
+  
+  .content2::before {
+    height: 30px;
+    top: -18%;
+    left: 51%;
+  }
+
+  .content2::after {
+    top: -5%;
+    left: 44.8%;
+  }
+
+  .content3 {
+    height: 180px;
+  }
+  
+  .content3::before {
+    height: 32px;
+    top: -22%;
+    left: 46.5%;
+  }
+
+  .content3::after {
+    top: -5%;
+    left: 40.3%;
+  }
+  
+  .content4 {
+    height: 180px;
+  }
+  
+  .content4::before {
+    height: 32px;
+    top: -22%;
+    left: 45.2%;
+  }
+
+  .content4::after {
+    top: -5%;
+    left: 39%;
+  }
+  
+}
+
+@media screen and (min-width: 668px) and (max-width: 1056px) {
+  .content::before {
+    height: 30px;
+    top: -18%;
+    left: 54.3%;
+  }
+
+  .content::after {
+    top: -5%;
+    left: 48.8%;
+  }
+
+  .content2::before {
+    height: 30px;
+    top: -18%;
+    left: 50.8%;
+  }
+
+  .content2::after {
+    top: -5%;
+    left: 45.3%;
+  }
+
+  .content3::before {
+    height: 35px;
+    top: -22%;
+    left: 46%;
+  }
+
+  .content3::after {
+    top: -5%;
+    left: 40.5%;
+  }
+
+  .content4::before {
+    height: 35px;
+    top: -22%;
+    left: 45%;
+  }
+
+  .content4::after {
+    top: -5%;
+    left: 39.7%;
+  }
+}
+
+/* FIN => MEDIA QUERYS*/
